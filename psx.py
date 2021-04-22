@@ -50,4 +50,4 @@ for i in range(len(data)):
   fb.put('historicaldatafyp-default-rtdb/Stocks/'+ticker,str(next_index),data)
   break
 
-fb.post('historicaldatafyp-default-rtdb/Stocks/runtime','',str(datetime.date.today()))
+fb.post('historicaldatafyp-default-rtdb/Stocks/runtime',str(datetime.date.today()))
