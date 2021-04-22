@@ -46,6 +46,7 @@ for i in range(len(data)):
   ticker = data[i][0]
   data_ = data[i][1]
   vals = fb.get('historicaldatafyp-default-rtdb/Stocks/'+ticker,'')
+  df = pd.DataFrame(vals)
   next_index = df.index.max()+1
   res = fb.put('historicaldatafyp-default-rtdb/Stocks/'+ticker,str(next_index),data_)
   print(res)
