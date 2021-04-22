@@ -44,10 +44,10 @@ for i in range(len(values)):
 fb = firebase.FirebaseApplication('https://historicaldatafyp-default-rtdb.firebaseio.com/', None)
 for i in range(len(data)):
   ticker = data[i][0]
-  data = data[i][1]
+  data_ = data[i][1]
   vals = fb.get('historicaldatafyp-default-rtdb/Stocks/'+ticker,'')
   next_index = df.index.max()+1
-  res = fb.put('historicaldatafyp-default-rtdb/Stocks/'+ticker,str(next_index),data)
+  res = fb.put('historicaldatafyp-default-rtdb/Stocks/'+ticker,str(next_index),data_)
   print(res)
 
 #fb.post('historicaldatafyp-default-rtdb/Stocks/runtime',str(datetime.date.today()))
