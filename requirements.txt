@@ -10,3 +10,4 @@ requests_toolbelt
 Crypto
 lxml
 xlrd
+openpyxl
