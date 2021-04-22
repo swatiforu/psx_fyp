@@ -8,3 +8,4 @@ sseclient
 pycryptodome
 requests_toolbelt
 Crypto
+lxml
