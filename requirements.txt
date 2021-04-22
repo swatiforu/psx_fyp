@@ -9,3 +9,4 @@ pycryptodome
 requests_toolbelt
 Crypto
 lxml
+xlrd
