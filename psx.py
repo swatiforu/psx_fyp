@@ -49,6 +49,3 @@ for i in range(len(data)):
   df = pd.DataFrame(vals)
   next_index = df.index.max()+1
   res = fb.put('historicaldatafyp-default-rtdb/Stocks/'+ticker,str(next_index),data_)
-  print(res)
-
-#fb.post('historicaldatafyp-default-rtdb/Stocks/runtime',str(datetime.date.today()))
