@@ -28,7 +28,9 @@ for i in range(len(values)):
         close = str(float(substring[3]))
         change = str(float(substring[4]))
         vol = substring[5]
-        curr_date = datetime.date.today().strftime('%d-%b-%Y')
+        curr_date = str(datetime.date.today().strftime('%d-%b-%Y'))
+        if 'Jun' in curr_date:
+          curr_date.replace('Jun','June')
         data_dict = {'Open': open_val,
                      'High': high,
                      'Low': low,
